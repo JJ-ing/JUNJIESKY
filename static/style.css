@@ -1,0 +1,205 @@
+.left_bar {
+    position: relative;
+    left: 0%;
+    margin: 15% 10% 10% 10%;
+    padding: 3% 6% 3% 6%;
+    border: 5px solid #F5F5F5;
+    border-radius: 5px;
+    width: 65%;
+    height: 480px;
+    background-color: #F5F5F5;
+    font-family: fantasy;
+}
+
+.left_bar_li {
+    font-size: 20px;
+    border: 1px solid #F5F5F5;
+    margin-top: 5px;
+    height: 50px;
+}
+
+.left_bar_li a {
+    color: #606060;
+    text-decoration: none;
+    text-align: center;
+    line-height: 10px;
+}
+
+.left_bar_li a:hover {
+    color: #1e1e1e;
+}
+
+#line {
+    z-index: 1;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+#nav {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    left: 30%;
+    color: #666;
+    font-size: 25px;
+    margin-top: 0px;
+    width: 1800px;
+}
+
+#nav a {
+    color: #666;
+}
+
+#home {
+    position: absolute;
+    margin-left: 240px;
+}
+
+#home a {
+    text-decoration: none;
+}
+
+#home a:hover {
+    color: #111111;
+}
+
+#diary {
+    position: absolute;
+    margin-left: 35px;
+}
+
+#diary a {
+    text-decoration: none;
+}
+
+#diary a:hover {
+    color: #111111;
+}
+
+#photo {
+    position: absolute;
+    margin-left: -75px;
+}
+
+#photo a {
+    text-decoration: none;
+}
+
+#photo a:hover {
+    color: #111111;
+}
+
+#comment {
+    position: absolute;
+    margin-left: 510px;
+}
+
+#comment a {
+    text-decoration: none;
+}
+
+#comment a:hover {
+    color: #111111;
+}
+
+#about {
+    position: absolute;
+    margin-left: 620px;
+}
+
+#about a {
+    text-decoration: none;
+}
+
+#about a:hover {
+    color: #111111;
+}
+
+#album {
+    position: relative;
+    left: 5%;
+    margin-top: -5px;
+    z-index: 10;
+}
+
+#left_bar a {
+    text-decoration: none;
+}
+
+#left_bar a:hover {
+    color: #1e1e1e;
+}
+
+#articles {
+    position: relative;
+    left: 42%;
+    margin: 5% 0 0 -34%;
+    padding: 3% 6% 3% 6%;
+    border: 6px solid #F5F5F5;
+    border-radius: 5px;
+    width: 64%;
+}
+
+.title {
+    font-size: 28px;
+    font-family: baskerville, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: #666666;
+}
+
+.author {
+    font-size: 16px;
+    font-family: Wenyue, baskerville, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.content {
+    font-size: 18px;
+    line-height: 32px;
+    font-family: baskerville, 'Times New Roman', Times, serif;
+}
+
+#footer {
+    font-family: baskerville, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    position: relative;
+    bottom: 0%;
+    left: 38%;
+    margin: 70px 0 50px -120px;
+    width: 240px;
+    height: 54px;
+}
+
+.template {
+    position: relative;
+    left: 42%;
+    margin: 5% 0 0 -34%;
+    padding: 3% 6% 3% 6%;
+    border: 6px solid #F5F5F5;
+    border-radius: 5px;
+    width: 64%;
+}
+
+.imglist img {
+    width: 340px;
+    height: 210px;
+    padding-left: 12px;
+    padding-top: 24px;
+    filter: grayscale(70%);
+}
+
+a.mdlink {
+    color: #FF7F00;
+    text-decoration: none;
+}
+
+a.mdlink:hover {
+    color: #FFA54F;
+}

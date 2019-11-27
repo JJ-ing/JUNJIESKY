@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/animate.min.css">
+    <title>poem</title>
+</head>
+
+<body>
+    <div>
+        <div id="app">
+            <div id="articles" class="animated fadeIn">
+                <div v-for="article in articles">
+                    <p class="title"><b><a>{{ article.title }}</a></b></p>
+                    <p class="author">作者: {{ article.author }}</p>
+                    <p class="content"><span v-html="article.content"></span></p><br>
+                    <div id="album">
+                        <img src="./static/pic/11.jpg" class="animated fadeIn" alt="1" style="filter: grayscale(80%);" width="28%" height="28%">&nbsp;
+                        <img src="./static/pic/12.jpg" class="animated fadeIn" alt="2" style="filter: grayscale(80%);" width="28%" height="28%">&nbsp;
+                        <img src="./static/pic/13.jpg" class="animated fadeIn" alt="3" style="filter: grayscale(80%);" width="28%" height="28%">
+                    </div>
+                </div>
+            </div>
+            <div id="footer"> <b>&copy Junjie &nbsp&nbsp 2019</b></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="static/DynamicLine.js"></script>
+    <script src="./static/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: function() {
+                return {
+                    articles: [{
+                        "title": "就是那一只蟋蟀",
+                        "author": "流沙河",
+                        "content": "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp就是那一只蟋蟀，钢翅响拍着金风，一跳跳过了海峡从台北上空悄悄降落，落在你的院子里夜夜唱歌.<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp就是那一只蟋蟀在《豳风·七月》里唱过，在《唐风·蟋蟀》里唱过在《古诗十九首》里唱过，在花木兰的织机旁唱过在姜夔的词里唱过劳人听过思妇听过.<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp就是那一只蟋蟀在深山的驿道边唱过，在长城的烽台上唱过，在旅馆的天井中唱过，在战场的野草间唱过，孤客听过伤兵听过.就是那一只蟋蟀在你的记忆里唱歌，在我的记忆里唱歌，唱童年的惊喜，唱中年的寂寞，想起雕竹做笼，想起呼灯篱落，想起月饼，想起桂花，想起满腹珍珠的石榴果，想起故园飞黄叶，想起野塘剩残荷，想起雁南飞，想起田间一堆堆的草垛，想起妈妈唤我们回去加衣裳，想起岁月偷偷流去许多许多.<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp就是那一只蟋蟀，在海峡那边唱歌，在海峡这边唱歌，在台北的一条巷子里唱歌，在四川的一个巷子里唱歌，处处唱歌比最单调的乐曲更单调，比最谐和的音响更谐和，凝成水是露珠，燃成光是萤火，变成鸟是鹧鸪啼叫在乡愁者的心窝.<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp就是那一只蟋蟀，在你的窗外唱歌，在我的窗外唱歌，你在倾听，你在想念，我在倾听，我在吟哦，你该猜到我在吟些什么，我会猜到你在想些，什么中国人有中国人的心态，中国人有中国人的耳朵",
+                    }, {
+                        "title": "赠女友洁",
+                        "author": "流沙河",
+                        "content": "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp回忆走过的路使我暗自惊心，为什么要这样曲曲弯弯弯弯曲曲浪费着生命。如果走成一条直线岂不节省许多光阴?<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp现在我才明白,原来步步都在向你靠近,要不这样弯曲地走,我们将会永远陌生,迟速一秒就不再相逢,恰如两颗交轨的行星.",
+                    }, ]
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

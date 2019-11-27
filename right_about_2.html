@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/animate.min.css">
+    <title>about</title>
+</head>
+
+<body>
+    <div>
+        <div id="app">
+            <div id="articles" class="animated fadeIn">
+                <div v-for="article in articles">
+                    <p class="title"><b><a>{{ article.title }}</a></b></p>
+                    <p class="author">{{ article.author }}</p>
+                    <p class="content"><span v-html="article.content"></span></p><br>
+                </div>
+            </div>
+            <div id="footer"> <b>&copy Junjie &nbsp&nbsp 2019</b></div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="static/DynamicLine.js"></script> -->
+    <script src="./static/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: function() {
+                return {
+                    articles: [{
+                        "title": "技术说明",
+                        "author": "JUNJIEKSY",
+                        "content": "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp网站分五个页面，整体使用frameset框架。除网站首页外，其他每个页面由上、左下和右下三个部分构成，每个页面至少三个基本html文件，顶部和左边的导航栏始终在用户可见区域。<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp右下页面背景中随鼠标移动的动态线条由javascript实现;导航栏等动态效果由库animate实现;点击图片后的展示效果由库fancyBox实现，图片使用了filter滤镜;随笔页面的PDF效果由&lt;embed&gt;标签实现；首页的动态背景效果由jquety等实现(脚本来自网络);其他效果由基本css文件实现。</b><br/>"
+                    }]
+                }
+            },
+        })
+    </script>
+</body>
+<!-- <script type="text/javascript" src="static/DynamicLine.js"></script> -->
+
+</html>

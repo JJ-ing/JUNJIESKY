@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/animate.min.css">
+    <title>about</title>
+</head>
+
+<body>
+    <div>
+        <div id="app">
+            <div id="articles" class="animated fadeIn">
+                <div v-for="article in articles">
+                    <p class="title"><b><a>{{ article.title }}</a></b></p>
+                    <p class="author">{{ article.author }}</p>
+                    <p class="content"><span v-html="article.content"></span></p><br>
+                </div>
+            </div>
+            <div id="footer"> <b>&copy Junjie &nbsp&nbsp 2019</b></div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="static/DynamicLine.js"></script> -->
+    <script src="./static/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: function() {
+                return {
+                    articles: [{
+                        "title": "项目简介",
+                        "author": "JUNJIEKSY",
+                        "content": "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp此个人主页网站为华中科技大学计算机科学与技术学院《大学计算机基础》结课作业，作者系2017级国际交流班罗俊杰。<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp个人网站分为“流影”、“诗文”、“我的首页”、“随笔”和“关于”五个部分，可以存放个人相片、文章和笔记，记录生活和学习的点滴。<b>网站由手工代码设计，部分局部效果引用外部脚本，未套用任何现成模板。界面清新朴素，实用性强。</b><br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp原码地址：<a>jkl</a><br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp项目演示：<a>jkl</a>",
+                    }]
+                }
+            },
+        })
+    </script>
+</body>
+<!-- <script type="text/javascript" src="static/DynamicLine.js"></script> -->
+
+</html>
